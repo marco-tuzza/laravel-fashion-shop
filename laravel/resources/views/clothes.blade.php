@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-    <h1>Hello World</h1>
+    @foreach ($clothes_list as $item)
+        <p>{{$item->id}}</p>
+        <p>{{$item->tipo}}</p>
+        <p>{{$item->colore}}</p>
+        <p>{{$item->disponibilità}}</p>
+        <br>
+    @endforeach
 </body>
 </html>
